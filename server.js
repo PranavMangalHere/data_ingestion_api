@@ -8,9 +8,9 @@ require('dotenv').config();
 const app = express();
 app.use(cors());
 app.use(express.json());
-
+MONGODB_URI = "mongodb+srv://raghavdua130:MERN123@cluster0.7x7u3.mongodb.net"
 // MongoDB connection
-mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/dataIngestion', {
+mongoose.connect(process.env.MONGO_URI || 'mongodb+srv://raghavdua130:MERN123@cluster0.7x7u3.mongodb.net', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => console.log('MongoDB connected'))
